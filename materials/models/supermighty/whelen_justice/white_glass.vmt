@@ -1,0 +1,28 @@
+"VertexlitGeneric"
+{
+	"$basetexturetransform" "center 0 0 scale 70 70 rotate 0 translate 0 0"
+	"$basetexture" "models/supermighty/whelen_justice_uk/clear_glass2"
+	"$bumpmap" "models/smcars/shared/skin_nm"
+	"$translucent" 1
+	"$halflambert" 1
+	"$nodecal" "1"
+	//"$nocull" 1
+
+	"$phong" "1" 
+	"$phongboost" "1" 
+	"$phongfresnelranges" "[3 3 3]" 
+	"$phongexponent" 0
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.1 .1 .1]"
+
+	"$colorfix" "{180 180 180}"
+	"Proxies"
+	{
+		"Equals"
+		{
+			srcVar1 $colorfix
+			resultVar	$color
+		}
+	}
+}
